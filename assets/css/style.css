@@ -8,10 +8,10 @@ h1 {
   text-transform: uppercase;
   font-weight: 700;
 }
-.header_home {
+.header{
   display: flex;
   flex-direction: column;
-  
+  width: 100%;
   height: 100vh;
   justify-content: space-between;
   text-align: center;
@@ -21,31 +21,35 @@ h1 {
   background-size: cover;
 }
 .nav {
-  letter-spacing: 3px;
   color: #fff;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 75px;
-  margin: 0 275px;
  
 }
-
+ .nav_link{
+  display: inline-block;
+  padding: 0 65px;
+  
+}
 .ph1{
-  margin-top: -30px ;
+  padding: 0 45px;
+  margin-top:-30px;
+  
 }
 .header_center {
-  letter-spacing: 3px;
+ 
   color: #fff;
   font-size: 25px;
 }
 .btn {
   margin-top: 30px;
-  letter-spacing: 2px;
-  font-size: 10px;
+  
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
@@ -55,9 +59,44 @@ h1 {
   padding: 20px 35px;
   border: 0px;
   border-radius: 5px;
+  text-decoration: none;
 }
+.btn:hover{
+  color: #16a085;
+  background-color: #fff;
+  transition: background 0.1s linear, color 0.1s;
+}
+
 .links {
   bottom: 25px;
   align-content: center;
   color: #fff;
+ 
+}
+.links i{
+   padding: 25px 5px;
+}
+/*Section*/
+.section{
+
+  height: 100vh;
+  width: 100%;
+
+}
+.second{
+    display: flex;
+  flex-direction: column;
+  margin: 100px 0 90px 130px;
+ justify-content: space-between left;
+ 
+  align-content: space-around;
+
+ 
+}
+.second_title{
+  font-weight: 700;
+  font-size: 22px;
+  color: #16a085;
+  text-transform: uppercase;
+
 }
