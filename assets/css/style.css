@@ -1,5 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1200px;
+  margin: 0;
+}
 body {
-  font-family: "Nurito", sans-serif;
+  font-family: "Pangolin", cursive;
   margin: 0px;
   letter-spacing: 3px;
 }
@@ -33,6 +42,12 @@ h1 {
 .nav_link {
   display: inline-block;
   padding: 0 65px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav_link:hover {
+  text-decoration: underline;
 }
 .ph1 {
   padding: 0 45px;
@@ -42,15 +57,14 @@ h1 {
   color: #fff;
   font-size: 25px;
 }
+/* Button*/
 .btn {
   margin-top: 30px;
-
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
-  height: 50px;
-  width: 165px;
+
   background-color: #16a085;
   padding: 20px 35px;
   border: 0px;
@@ -71,21 +85,44 @@ h1 {
 .links i {
   padding: 25px 5px;
 }
-/*Section*/
+/*Section second*/
 .section {
-  height: 100vh;
   width: 100%;
 }
 .second {
   display: flex;
   flex-direction: column;
-  margin: 100px 0 90px 130px;
-
-  align-content: space-around;
+  background: url("/assets/images/second_bg.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
-.second_title {
+/* Адаптивка для устройств*/
+@media screen and (max-width: 1024px) {
+  .nav {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+
+  .ph1 {
+    margin-top: 0;
+  }
+}
+.content {
+  width: 65%;
+  padding: 130px 0 110px 330px;
+}
+
+.content h2 {
   font-weight: 700;
   font-size: 22px;
   color: #16a085;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
+.content p {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 20px 0 15px 0;
+}
+
+/*End of Second section */
