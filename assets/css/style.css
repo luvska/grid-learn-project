@@ -80,7 +80,6 @@ h1 {
   display: flex;
   flex-direction: column;
   margin: 100px 0 90px 130px;
-  justify-content: space-between left;
 
   align-content: space-around;
 }
