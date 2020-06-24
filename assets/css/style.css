@@ -5,7 +5,7 @@
 }
 .container {
   max-width: 1200px;
-  margin: 0;
+  margin: 0 auto;
 }
 .section {
   width: 100%;
@@ -89,9 +89,9 @@ h1 {
 .links i {
   padding: 25px 5px;
 }
-/*Section second*/
+/*Section 2th app*/
 
-.second {
+.section--second {
   display: flex;
   flex-direction: column;
   background: url("/assets/images/second_bg.jpg") center no-repeat;
@@ -111,7 +111,8 @@ h1 {
 }
 .content_second {
   width: 65%;
-  padding: 130px 0 110px 330px;
+  padding-right: 300px;
+  margin: 110px 0 110px 120px;
 }
 
 .content_second h2 {
@@ -127,7 +128,7 @@ h1 {
   padding: 20px 0 15px 0;
 }
 
-/*End of Second section */
+/*End of 2th app section */
 
 /*Design section*/
 .design {
@@ -137,7 +138,7 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 145px 330px 0 330px;
+  margin: 110px 0 0 120px;
   width: 100%;
 }
 .content_design p {
@@ -152,9 +153,12 @@ h1 {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+.design_text {
+  padding-right: 80px;
+}
 
 .phone {
-  padding-right: 430px;
+  padding-right: 330px;
 }
 .design_num {
   padding-top: 10px;
@@ -183,20 +187,50 @@ h1 {
   border-right: 3px solid #333333;
   transform: rotate(45deg);
 }
-/*End of third DESIGN section*/
-.community{
+/*End of 3th DESIGN section*/
+.community {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  
   background-color: #f5f6f7;
 }
-.community_content{
+.community_content {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
- align-items: center;
- margin: 120px;
- 
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 120px;
+  width: 100%;
+}
+.community_inner {
+  margin-left: 20px;
+  text-align: center;
+}
+.community_inner p {
+}
 
+.community_ph {
+  margin-bottom: 30px;
+}
+.community_title {
+  font-weight: 700;
+  font-size: 22px;
+  color: #333333;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.community_title p {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 20px 0 15px 0;
+}
+.community_content .arrows {
+  display: contents;
+}
+/*end of 4th community section*/
+
+/* Section Subsribe*/
+.subs {
 }
