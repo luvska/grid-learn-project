@@ -112,7 +112,7 @@ h1 {
 .content_second {
   width: 65%;
   padding-right: 300px;
-  margin: 110px 0 110px 120px;
+  margin: 110px 0 110px 0px;
 }
 
 .content_second h2 {
@@ -138,7 +138,7 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 110px 0 0 120px;
+  margin: 110px 0 0 0px;
   width: 100%;
 }
 .content_design p {
@@ -154,11 +154,10 @@ h1 {
   margin-bottom: 20px;
 }
 .design_text {
-  padding-right: 80px;
 }
 
 .phone {
-  padding-right: 330px;
+  padding-right: 400px;
 }
 .design_num {
   padding-top: 10px;
@@ -188,7 +187,7 @@ h1 {
   transform: rotate(45deg);
 }
 /*End of 3th DESIGN section*/
-.community {
+.section--community {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -199,12 +198,15 @@ h1 {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
-  align-items: center;
-  margin: 120px;
-  width: 100%;
+  margin-top: 110px;
 }
 .community_inner {
-  margin-left: 20px;
+  /*width: 20%;*/
+  display: flex;
+  flex-direction: column;
+  padding-right: 200px;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 .community_inner p {
@@ -227,10 +229,23 @@ h1 {
   padding: 20px 0 15px 0;
 }
 .community_content .arrows {
-  display: contents;
+  display: flex;
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 580px;
+}
+
+.community_gallery {
+  padding-right: 40px;
 }
 /*end of 4th community section*/
 
 /* Section Subsribe*/
+.section--subs {
+
+  background: url("/assets/images/second_bg.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
 .subs {
 }
