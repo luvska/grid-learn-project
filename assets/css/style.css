@@ -211,8 +211,6 @@ h1 {
   align-items: center;
   text-align: center;
 }
-.community_inner p {
-}
 
 .community_ph {
   margin-bottom: 30px;
@@ -280,8 +278,6 @@ h1 {
   border: none;
   border-radius: 5px 0 0 5px;
 }
-.subscribe_input:hover {
-}
 
 .subscribe_btn {
   background-color: #16a085;
@@ -291,7 +287,11 @@ h1 {
   cursor: pointer;
   border: none;
 }
-
+.subscribe_btn:hover {
+  color: #fff;
+  background-color: #1abc9c;
+  transition: background 0.1s linear, color 0.1s;
+}
 .arrow_down {
   content: "";
   width: 20px;
@@ -308,7 +308,6 @@ h1 {
   background-color: #f5f6f7;
 }
 .download_inner {
-  height: 50vh;
   display: flex;
   flex-direction: column;
 
@@ -330,7 +329,57 @@ h1 {
 }
 .download_btn {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  margin: 30px 0 115px 0;
+  margin-top: 50px;
+  margin-bottom: 115px;
+}
+.button {
+  display: flex;
+  background-color: #1abc9c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.button:hover {
+  cursor: pointer;
+  transition: linear;
+  transform: perspective(1 2 3 4);
+}
+.button-text {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 20px 90px 20px 30px;
+}
+.button-icon {
+  padding: 23px;
+  background-color: #16a085;
+  display: inherit;
+  border-radius: 0 5px 5px 0;
+}
+/*End of downloads section*/
+
+/*Footer*/
+
+.footer_inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 47px;
+  margin-bottom: 40px;
+}
+.footer_title {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.line {
+  border-left: 1px solid #16a085;
+  border-right: 1px solid #16a085;
+  padding: 0 6px 0 6px;
+}
+.footer_title p {
+  margin-top: 30px;
 }
