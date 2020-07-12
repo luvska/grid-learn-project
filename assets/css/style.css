@@ -43,15 +43,16 @@ h1 {
   justify-content: center;
   padding-top: 75px;
 }
+
 .nav_link {
-  display: inline-block;
   padding: 0 65px;
   color: #fff;
   text-decoration: none;
 }
 
 .nav_link:hover {
-  text-decoration: underline;
+  transition: background 0.1s linear, color 0.1s;
+  color: #1abc9c;
 }
 .ph1 {
   padding: 0 45px;
@@ -87,43 +88,37 @@ h1 {
   align-content: center;
   color: #fff;
 }
+.fab:hover {
+  cursor: pointer;
+  color: #1abc9c;
+}
 .links i {
   padding: 25px 5px;
 }
 /*Section 2th app*/
 
-.section--second {
+.section--start {
   display: flex;
   flex-direction: column;
   background: url("/assets/images/second_bg.jpg") center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
 }
-/* Адаптивка для устройств*/
-@media screen and (max-width: 1024px) {
-  .nav {
-    flex-direction: column;
-    margin-top: 0px;
-  }
 
-  .ph1 {
-    margin-top: 0;
-  }
-}
-.content_second {
+.content_start {
   width: 65%;
   padding-right: 300px;
   margin: 110px 0 110px 0px;
 }
 
-.content_second h2 {
+.content_start h2 {
   font-weight: 700;
   font-size: 22px;
   color: #16a085;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.content_second p {
+.content_start p {
   font-weight: 400;
   font-size: 14px;
   padding: 20px 0 15px 0;
@@ -137,10 +132,8 @@ h1 {
 }
 .content_design {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 110px 0 0 0px;
-  width: 100%;
+
+  margin-top: 110px;
 }
 .content_design p {
   font-weight: 400;
@@ -154,7 +147,7 @@ h1 {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.design_text {
+.design_inner {
 }
 
 .phone {
@@ -196,14 +189,12 @@ h1 {
 }
 .community_content {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+
   justify-content: space-evenly;
   margin-top: 110px;
   margin-bottom: 110px;
 }
 .community_inner {
-  /*width: 20%;*/
   display: flex;
   flex-direction: column;
   padding-right: 200px;
@@ -232,7 +223,7 @@ h1 {
   display: flex;
   position: absolute;
   margin-top: -30px;
-  margin-left: 580px;
+  margin-left: 550px;
 }
 
 .community_gallery {
@@ -241,7 +232,7 @@ h1 {
 /*end of 4th community section*/
 
 /* Section Subsribe*/
-.section--subs {
+.section--subscribe {
   display: flex;
   flex-direction: row;
   background: url("/assets/images/subs_bg.jpg") center no-repeat;
@@ -261,6 +252,7 @@ h1 {
 .subs_to {
   font-weight: 700;
   font-size: 30px;
+  text-align: center;
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 35px;
@@ -382,4 +374,61 @@ h1 {
 }
 .footer_title p {
   margin-top: 30px;
+}
+/*end of footer*/
+
+/* Adaptive for devises*/
+@media screen and (max-width: 1024px) {
+  .nav {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+
+  .ph1 {
+    margin-top: 0;
+  }
+  .content_start {
+    width: auto;
+    padding: 30px;
+  }
+  .content_design {
+    display: block;
+  }
+  .phone {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .design_inner {
+    padding: 30px;
+  }
+  .community_content {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .community_inner {
+    padding-right: 0px;
+    padding-bottom: 40px;
+  }
+  .community_content .arrows {
+    margin-left: 35%;
+  }
+  .community_gallery {
+    padding: 30px 0 30px 0;
+  }
+  .subs_to {
+    padding: 30px;
+  }
+  .button-text {
+    padding: 20px 30px 0px 30px;
+  }
+  .download_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 22vh;
+  }
+  .footer_inner {
+    padding: 0 10px 0 10px;
+  }
 }
