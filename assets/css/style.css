@@ -95,7 +95,7 @@ h1 {
 .links i {
   padding: 25px 5px;
 }
-/*Section 2th app*/
+/*Section Start App*/
 
 .section--start {
   display: flex;
@@ -197,7 +197,7 @@ h1 {
 .community_inner {
   display: flex;
   flex-direction: column;
-  padding-right: 200px;
+  /*padding-right: 20%;*/
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -223,11 +223,13 @@ h1 {
   display: flex;
   position: absolute;
   margin-top: -30px;
-  margin-left: 550px;
+  margin-left: 29%;
 }
 
 .community_gallery {
-  padding-right: 40px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 /*end of 4th community section*/
 
@@ -413,6 +415,7 @@ h1 {
     margin-left: 35%;
   }
   .community_gallery {
+    display: block;
     padding: 30px 0 30px 0;
   }
   .subs_to {
