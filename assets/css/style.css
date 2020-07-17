@@ -124,7 +124,7 @@ h1 {
   padding: 20px 0 15px 0;
 }
 
-/*End of 2th app section */
+/*End of Start App section */
 
 /*Design section*/
 .design {
@@ -147,7 +147,8 @@ h1 {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.design_inner {
+.design_inner  {
+ 
 }
 
 .phone {
@@ -201,6 +202,9 @@ h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+.community_inner p{
+  margin: 0 30px;
 }
 
 .community_ph {
@@ -348,7 +352,7 @@ h1 {
   padding: 20px 90px 20px 30px;
 }
 .button-icon {
-  padding: 23px;
+  padding: 20px;
   background-color: #16a085;
   display: inherit;
   border-radius: 0 5px 5px 0;
@@ -385,7 +389,9 @@ h1 {
     flex-direction: column;
     margin-top: 0px;
   }
-
+  .header_center {
+    margin: 0 30px;
+  }
   .ph1 {
     margin-top: 0;
   }
@@ -397,6 +403,7 @@ h1 {
     display: block;
   }
   .phone {
+    display: none;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -412,17 +419,21 @@ h1 {
     padding-bottom: 40px;
   }
   .community_content .arrows {
-    margin-left: 35%;
+    margin-left: 30px;
   }
   .community_gallery {
     display: block;
     padding: 30px 0 30px 0;
+    text-align: center;
   }
   .subs_to {
     padding: 30px;
   }
   .button-text {
     padding: 20px 30px 0px 30px;
+  }
+  .download_text {
+    margin: 30px 30px;
   }
   .download_btn {
     display: flex;
@@ -431,6 +442,7 @@ h1 {
     justify-content: space-between;
     height: 22vh;
   }
+
   .footer_inner {
     padding: 0 10px 0 10px;
   }
