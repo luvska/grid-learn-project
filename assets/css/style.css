@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section {
+  width: 100%;
+}
+body {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: "Varela Round", sans-serif;
+  margin: 0px;
+  /*letter-spacing: 3px;*/
+}
+/*Start Navigation*/
+.header {
+  height: 100vh;
+  background: url(/assets/image/header_bg.jpg) center no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.line {
+  /*margin-top: 70px;
+  position: relative;*/
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+}
+.nav_main {
+  padding: 10px 0 10px 0;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 24px;
+}
+.logo {
+  font-size: 40px;
+  font-weight: 400;
+  padding: 10px 15px 10px 15px;
+  position: absolute;
+  background-color: #11749e;
+  z-index: 2;
+}
+.logo_bg {
+  position: relative;
+  margin-top: 9px;
+}
+
+.logo_bg::after {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+
+  width: 70px;
+  height: 68px;
+  z-index: 1;
+  opacity: 0.7;
+}
+.logo:hover {
+  cursor: pointer;
+  transition: 0.3s ease;
+  transform: translate(-10px, -15px);
+}
+.navigation {
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 22.5%;
+  display: flex;
+  justify-content: space-evenly;
+  width: 140%;
+  height: 10vh;
+  align-items: center;
+  color: #fff;
+}
+.navigation :hover {
+  cursor: pointer;
+
+  border-bottom: 4px solid rgba(17, 116, 158, 0.9);
+  padding: 47px 0 42px 0;
+  transition: linear;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav_social_icons {
+  font-size: 18px;
+  font-weight: 400;
+
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  align-items: center;
+}
+.fab:hover {
+  cursor: pointer;
+  color: #11749e;
+  transition: 0.2s ease;
+}
+
+.title {
+  margin-top: 17.1%;
+  letter-spacing: 3px;
+
+  font-family: "Noto Sans JP", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+}
+.title h1 {
+  font-size: 152.5px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.title h2 {
+  font-size: 25px;
+
+  color: #11749e;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+}
+.scroll {
+  margin-top: 150px;
+  color: #ffffff;
+  text-align: center;
+}
+.scroll h3 {
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+.arrow-bottom {
+  background-color: rgba(255, 0, 0, 0);
+  border-radius: 50%;
+  padding: 25px;
+  border: 1px solid #ffffff;
+}
+/*
+.arrow-bottom i{
+  color: #ffffff;
+}
+добваить hover на стрелку1*/
+.arrow-bottom:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+
+  transform: rotate(135deg);
+}
+.arrow-bottom:hover {
+  /*background-color: #fff;*/
+  cursor: pointer;
+  transition: 0.3s ease;
+  transform: scale(1.2);
+}
+.arrow-bottom:after:hover {
+  
+}
