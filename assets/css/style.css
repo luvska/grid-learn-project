@@ -26,15 +26,16 @@ body {
 
 .line {
   /*margin-top: 70px;
-  position: relative;*/
+  position: relative;
+  overflow: hidden;
   width: 100vw;
   position: relative;
   margin-left: -50vw;
-  left: 50%;
+  left: 50%;*/
   border-bottom: 1px solid rgba(255, 255, 255, 0.38);
 }
 .nav_main {
-  padding: 10px 0 10px 0;
+  padding: 17px 0 10px 0;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
@@ -169,5 +170,106 @@ a {
   transform: scale(1.2);
 }
 .arrow-bottom:after:hover {
+}
+/*End Navigation*/
+
+/*Start Agency*/
+.section--agency {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #11749e;
+}
+.heading {
+  padding-top: 148px;
+  padding-bottom: 130px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  align-items: center;
+}
+.heading_inner {
+  font-weight: 400;
+  font-size: 236px;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.18);
+}
+.heading_title {
+  font-weight: 400;
+  font-size: 38px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+.feature-grid {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 127px;
+  display: grid;
+  grid-template-columns: 22% 22% 22% 22%;
+  grid-template-rows: 1fr;
+  grid-column-gap: 36px;
+  align-content: center;
+  justify-content: center;
+}
+
+.circle {
+  background-color: rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+  padding: 47px;
+  border: none;
+}
+/*
+.circle::after{
   
+  content: "";
+  left: 0;
+  top: 0;
+  
+  background-color: rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+  padding: 66px;
+  border: none;
+  position: absolute;
+  z-index: 1;
+  width: 0px;
+  height: 0px;
+  
+}
+*/
+
+.icon {
+  cursor: pointer;
+  z-index: 2;
+  color: #ffffff;
+  font-size: 34px;
+}
+
+.icon:hover {
+  background: cover;
+
+  color: #11749e;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 37px;
+  border: none;
+
+  transition: 0.2s ease;
+}
+.circle:hover {
+  padding: 47px;
+}
+
+.feature_title {
+  font-size: 17px;
+  font-weight: 700;
+  padding: 17px 0px 23px 0px;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.feature_text {
+  font-size: 14px;
+  font-weight: 100;
+  color: #fff;
+  line-height: 23px;
 }
