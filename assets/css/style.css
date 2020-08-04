@@ -395,12 +395,10 @@ a {
 }
 .benefits_box_left {
   display: flex;
-  
-  
 }
 .benefits_box_right {
   display: flex;
- padding-left: 30px;
+  padding-left: 30px;
 }
 
 .benefits_icon {
@@ -414,3 +412,96 @@ a {
   font-weight: 400;
   line-height: 24px;
 }
+/* End Benefits Section */
+
+/* Start Key Section */
+.section--key {
+  background: url(/assets/image/phone_bg.jpg) center no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+}
+.key_feature {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 89px;
+}
+.key_text_block {
+  display: flex;
+  flex-direction: column;
+  padding-top: 123px;
+
+  width: 47%;
+}
+.key_title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 400;
+  padding-bottom: 28px;
+  letter-spacing: 1px;
+}
+.key_subtitle {
+  color: #fff;
+  font-size: 15px;
+  line-height: 24px;
+  width: 85%;
+}
+.text_area {
+  padding-top: 44px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+
+  letter-spacing: 1px;
+}
+
+.box1 {
+  margin: 20px 170px 20px 0px;
+  padding: 10px 0px 10px 20px;
+}
+
+.box2 {
+  background-color: #11749e;
+  margin: 23px 140px 20px 0px;
+  padding: 10px 0px 10px 20px;
+}
+
+.box3 {
+  background-color: #11749e;
+  margin: 22px 110px 20px 0px;
+  padding: 10px 0px 10px 20px;
+}
+.animation {
+  z-index: 1;
+  color: #fff;
+  background: #3a7999;
+  position: relative;
+  box-sizing: border-box;
+  transition: all 0.7s ease;
+}
+
+.animation:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 40px;
+  transition: all 0.7s ease-in;
+}
+
+.animation:hover::before {
+  z-index: -1;
+  background-color: #fff;
+  width: 100%;
+}
+.animation:hover {
+  color: #11749e;
+}
+.key_phone {
+  display: flex;
+  justify-content: center;
+  width: 35%;
+}
+/* End Key Section  */
